@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 body {
@@ -7,6 +6,7 @@ body {
     padding: 0;
     background-color: #000; /* Fondo negro */
     color: #fff; /* Texto blanco */
+    font-size: 1.2em; /* Aumento del tamaño del texto */
 }
 
 .header {
@@ -47,6 +47,14 @@ body {
     margin: 0 auto;
 }
 
+h2 {
+    font-size: 2em; /* Aumento del tamaño del texto para encabezados */
+}
+
+p {
+    font-size: 1.5em; /* Aumento del tamaño del texto para párrafos */
+}
+
 .section {
     margin: 40px 0;
 }
@@ -61,6 +69,7 @@ body {
     color: #d4af37; /* Dorado pastel */
     text-align: center;
     padding: 10px 0;
+    font-size: 1.2em; /* Aumento del tamaño del texto para el pie de página */
 }
 
 .cta-button {
