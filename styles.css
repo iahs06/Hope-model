@@ -52,7 +52,7 @@ h2 {
 }
 
 p {
-    font-size: 1.5em; /* Aumento del tamaño del texto para párrafos */
+    font-size: 2.5em; /* Aumento del tamaño del texto para párrafos */
 }
 
 .section {
@@ -60,7 +60,7 @@ p {
 }
 
 .section img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
