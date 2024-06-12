@@ -18,7 +18,7 @@ body {
 }
 
 .header img {
-    width: 100px;
+    width: 200px;
 }
 
 .nav {
@@ -60,7 +60,7 @@ p {
 }
 
 .section img {
-    width: 80%;
+    width: 60%;
     height: auto;
 }
 
