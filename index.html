@@ -12,8 +12,8 @@
     </div>
     <div class="nav">
         <a href="index.html">Inicio</a>
-        <a href="sobre nosotros.html">Historia</a>
-        <a href="serviciosc.html">Servicios</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="servicios.html">Servicios</a>
         <a href="blog.html">Blog</a>
     </div>
     <div class="main">
@@ -37,12 +37,27 @@
                 esta rica historia, simbolizando la aspiración y el profesionalismo que estas 
                 modelos han representado a lo largo de las décadas.</p>
             <img src="https://recursos.mujeresaseguir.com/files/843/33.jpg" alt="Imagen 2">
+
+            <!-- Input for YouTube URL -->
+            <h3>Agregar video de YouTube</h3>
+            <input type="text" id="youtube-url-home" placeholder="Ingrese URL de YouTube">
+            <button onclick="addYoutubeVideo('youtube-url-home', 'home')">Agregar Video</button>
+            <div id="youtube-video-home"></div>
         </div>
     </div>
     <div class="footer">
         <p>© 2024 Modelo Superior. Todos los derechos reservados.</p>
     </div>
+
+    <!-- JavaScript to handle YouTube video embedding -->
+    <script>
+        function addYoutubeVideo(inputId, sectionId) {
+            const url = document.getElementById(inputId).value;
+            const videoId = url.split('v=')[1];
+            const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+            const iframe = `<iframe width="560" height="315" src="${embedUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            document.getElementById(`youtube-video-${sectionId}`).innerHTML = iframe;
+        }
+    </script>
 </body>
 </html>
-
-      
