@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Hope Model</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -38,26 +38,16 @@
                 modelos han representado a lo largo de las décadas.</p>
             <img src="https://recursos.mujeresaseguir.com/files/843/33.jpg" alt="Imagen 2">
 
-            <!-- Input for YouTube URL -->
-            <h3>Agregar video de YouTube</h3>
-            <input type="text" id="youtube-url-home" placeholder="https://youtu.be/sa52xabMSB8?si=N1wVBbh8jepk3MP9">
-            <button onclick="addYoutubeVideo('youtube-url-home', 'home')">Agregar Video</button>
-            <div id="youtube-video-home"></div>
+            <!-- Sección para el video de YouTube -->
+            <div class="video-container">
+                <h3>Video de Introducción</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
     <div class="footer">
         <p>© 2024 Modelo Superior. Todos los derechos reservados.</p>
     </div>
-
-    <!-- JavaScript to handle YouTube video embedding -->
-    <script>
-        function addYoutubeVideo(inputId, sectionId) {
-            const url = document.getElementById(inputId).value;
-            const videoId = url.split('v=')[1];
-            const embedUrl = `https://www.youtube.com/embed/${videoId}`;
-            const iframe = `<iframe width="560" height="315" src="${embedUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-            document.getElementById(`youtube-video-${sectionId}`).innerHTML = iframe;
-        }
-    </script>
 </body>
 </html>
+
