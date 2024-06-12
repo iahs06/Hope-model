@@ -6,7 +6,7 @@ body {
     padding: 0;
     background-color: #000; /* Fondo negro */
     color: #fff; /* Texto blanco */
-    font-size: 0.8em; /* Aumento del tamaño del texto */
+    font-size: 1.2em; /* Aumento del tamaño del texto */
 }
 
 .header {
@@ -52,7 +52,7 @@ h2 {
 }
 
 p {
-    font-size: 0.9em; /* Aumento del tamaño del texto para párrafos */
+    font-size: 1.2em; /* Aumento del tamaño del texto para párrafos */
 }
 
 .section {
