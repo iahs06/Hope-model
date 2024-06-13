@@ -1,114 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentarios - HOPE Model</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f2f2f2; /* Color de fondo similar al de la página HOPE Model */
-        }
-        .comment-section {
-            max-width: 800px;
-            margin: auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .comment {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        .comment-author {
-            font-weight: bold;
-            color: #555; /* Color de texto similar al de la página HOPE Model */
-        }
-        .comment-date {
-            font-size: 0.8em;
-            color: #888; /* Color de texto gris similar al de la página HOPE Model */
-            margin-top: 5px;
-        }
-        .comment-text {
-            margin-top: 10px;
-            color: #333; /* Color de texto principal similar al de la página HOPE Model */
-        }
-        .comment-form {
-            margin-top: 30px;
-        }
-        .comment-form label {
-            display: block;
-            font-weight: bold;
-            color: #555; /* Color de texto similar al de la página HOPE Model */
-            margin-bottom: 8px;
-        }
-        .comment-form input[type="text"],
-        .comment-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 1em;
-        }
-        .comment-form textarea {
-            resize: vertical;
-        }
-        .comment-form button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-        .comment-form button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Comentarios - Psicología</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Comentarios</h1>
+    </header>
 
-<div class="comment-section">
-    <h2 style="color: #4CAF50;">Comentarios</h2>
+    <div class="container">
+        <section class="comments-section">
+            <h2>Comentarios recientes</h2>
+            <!-- Aquí irían los comentarios existentes, si hubiera alguno -->
 
-    <div class="comment">
-        <div class="comment-author">Juan Pérez</div>
-        <div class="comment-date">12 de junio de 2024</div>
-        <div class="comment-text">
-            ¡Este modelo es fascinante! Me encanta cómo aborda los problemas actuales.
-        </div>
+            <div class="comment-form">
+                <h3 style="color: #4a148c;">Deja tu comentario</h3>
+                <form action="#" method="post">
+                    <label for="author">Nombre:</label>
+                    <input type="text" id="author" name="author" required>
+                    
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar comentario</button>
+                </form>
+            </div>
+        </section>
     </div>
 
-    <div class="comment">
-        <div class="comment-author">María Gómez</div>
-        <div class="comment-date">11 de junio de 2024</div>
-        <div class="comment-text">
-            Estoy emocionada por ver cómo evoluciona esta investigación.
-        </div>
-    </div>
-
-    <!-- Puedes añadir más comentarios aquí -->
-
-    <form class="comment-form" action="#" method="post">
-        <h3 style="color: #4CAF50;">Deja tu comentario</h3>
-        <label for="author">Nombre:</label>
-        <input type="text" id="author" name="author" required>
-        
-        <label for="comment">Comentario:</label>
-        <textarea id="comment" name="comment" rows="4" required></textarea>
-        
-        <button type="submit">Enviar comentario</button>
-    </form>
-</div>
+    <footer>
+        <p>&copy; 2024 Psicología. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
+</html>
+
 </html>
 
