@@ -3,40 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentarios - Psicología</title>
+    <title>Comentarios</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Comentarios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Historia.html">Historia</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="https://www.canva.com/design/DAGDznrzbfs/QkXGsFvd-HhesveO0oanXA/edit">Blog</a></li>
+                <li><a href="Comentarios.html">Comentarios</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <div class="container">
-        <section class="comments-section">
-            <h2>Comentarios recientes</h2>
-            <!-- Aquí irían los comentarios existentes, si hubiera alguno -->
-
-            <div class="comment-form">
-                <h3 style="color: #4a148c;">Deja tu comentario</h3>
-                <form action="#" method="post">
-                    <label for="author">Nombre:</label>
-                    <input type="text" id="author" name="author" required>
-                    
-                    <label for="comment">Comentario:</label>
-                    <textarea id="comment" name="comment" rows="4" required></textarea>
-                    
-                    <button type="submit">Enviar comentario</button>
-                </form>
-            </div>
+    <main>
+        <section id="comentarios">
+            <h2>Deja tu comentario</h2>
+            <form id="form-comentarios">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
         </section>
-    </div>
-
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Correo: <a href="mailto:contacto@tuweb.com">contacto@tuweb.com</a></p>
+            <p>Teléfono: <a href="tel:+1234567890">+123 456 7890</a></p>
+        </section>
+        
+        <section id="contador">
+            <h2>Visitas</h2>
+            <p>Esta página ha sido visitada <span id="contador-visitas">0</span> veces.</p>
+        </section>
+    </main>
+    
     <footer>
-        <p>&copy; 2024 Psicología. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Tu Web. Todos los derechos reservados.</p>
     </footer>
-
+    
+    <script src="script.js"></script>
 </body>
-</html>
-
 </html>
 
